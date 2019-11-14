@@ -1,7 +1,19 @@
 {
-  "env": {
-    "test": {
-      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+    },
+    "extends": "eslint:recommended",
+    "env": {
+      "es6": true,
+      "browser": true,
+      "jquery": true
+    },
+    "rules": {
+        "semi": 1,
+        "indent": ["warn", 2],
+        "no-console": "warn",
+        "no-debugger": "warn",
+        "no-unused-vars": "warn"
     }
-  }
 }
