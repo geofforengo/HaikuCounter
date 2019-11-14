@@ -9,7 +9,7 @@ describe('Haiku', () => {
     expect(haiku.line3).toEqual("words");
   });
   test('Program checks that only letters and punctuation are inputted', () => {
-    let haiku = new Haiku("words","1234","words");
+    let haiku = new Haiku("words","words","words");
     expect(haiku.line1).toEqual("words");
     expect(haiku.line2).toEqual("words");
     expect(haiku.line3).toEqual("words");
