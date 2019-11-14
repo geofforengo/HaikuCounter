@@ -13,4 +13,11 @@ export class Haiku {
       return "Please use letters only"
     }
   }
+
+  toStrings() {
+    let line1 = this.line1.split(' ');
+    console.log(line1);
+    let line2 = this.line2.split(' ');
+    let line3 = this.line3.split(' ');
+  }
 }
