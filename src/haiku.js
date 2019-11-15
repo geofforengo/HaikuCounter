@@ -15,4 +15,10 @@ export class Haiku {
       return "Please use word characters only";
     }
   }
+  splitStrings(stringHaiku) {
+    let line1 = this.line1.split(' ');
+    let line2 = this.line2.split(' ');
+    let line3 = this.line3.split(' ');
+    return [line1=this.line1, line2=this.line2, line3=this.line3];
+}
 }
