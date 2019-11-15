@@ -9,13 +9,10 @@ export class Haiku {
     if ((this.line1 === "") || (this.line2 === "") || (this.line3 === "")) {
       return "Please enter words for every line";
     }
-    // else if (this.line1.inclues(/\W/)) {
-    //   return "Please use letters only"
-    // }
+  }
+  onlyWords() {
+    if ((/[^a-z]/i.test(this.line1)) || (/[^a-z]/i.test(this.line2)) || (/[^a-z]/i.test(this.line3))){
+      return "Please use word characters only";
+    }
   }
 }
-//   toStrings() {
-//     let line1 = this.line1.split(' ');
-//     let line2 = this.line2.split(' ');
-//     let line3 = this.line3.split(' ');
-//   }
